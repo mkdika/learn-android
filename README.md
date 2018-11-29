@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 
-Learning and testing modern Android development, tools and framework.
+Learning and testing modern Android development, tools and frameworks.
 
 ## Reference
 
