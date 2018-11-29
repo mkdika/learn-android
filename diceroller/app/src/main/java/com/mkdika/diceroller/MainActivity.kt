@@ -1,31 +1,27 @@
 package com.mkdika.diceroller
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 import android.widget.ImageView
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var diceImage: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val rollButton = findViewById<Button>(R.id.roll_button)
-        rollButton.text = "Let's Roll"
         rollButton.setOnClickListener{
-            // create a Toast
-//            Toast.makeText(this,"Button clicked!", Toast.LENGTH_SHORT).show()
             rollDice()
         }
+        diceImage = findViewById(R.id.dice_image)
     }
 
     private fun rollDice() {
-        val diceImage: ImageView = findViewById(R.id.dice_image)
-
         val randomInt = Random().nextInt(6) + 1
-
         val drawableResource = when(randomInt) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
@@ -34,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-
         diceImage.setImageResource(drawableResource)
 
     }
