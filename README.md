@@ -1,4 +1,4 @@
-# Learn Android Dev with Kotlin
+# Learn Android
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
 
