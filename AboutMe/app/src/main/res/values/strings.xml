@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Maikel Chandika</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="bio">
+        Experienced on enterprise business software development and System Analysis in serving of more than 10 years,
+        especially more than 7 years on Java platform within several industries sector such as multi finance, manufacture,
+        logistics, human resources, shipping, shipyard and services. \n\n
+        Skilled on web and desktop application development, and have been deploying numerous of application. \n\n
+        Enjoy to lead, mentoring and help team to achieve their goal. \n\n
+        Consistently improving himself to the next state of software development delivery, and hope can get involved into
+        bigger social impact project.
+    </string>
+    <string name="whatNickname">Fill the nick name</string>
+    <string name="done">Done</string>
+</resources>

@@ -10,6 +10,7 @@ Learning and testing modern Android development, tools and frameworks.
 - [Androiod Kotlin Youtube Channel](https://www.youtube.com/watch?v=zfmT8fVlMhY&list=PLPPq5KlB5kVnryPYYz2GoNPuMesJ5shEs)
 - [Google Training Android](https://developers.google.com/training/android/)
 - [Samsung Phone Emulator Skin](https://developer.samsung.com/technical-doc/view.do?v=T000000095)
+- [Android Jetpack](https://developer.android.com/jetpack)
 - __Free courses:__
   - [Android Developer Fundamentals V2](https://developer.android.com/courses/fundamentals-training/overview-v2)
   - [Android CodeLabs](https://codelabs.developers.google.com/?cat=Android), Google source of guide, tutorial, hands-on coding experience.
