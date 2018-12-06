@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         // setContentView(R.layout.activity_main)
 
         // use binding engine for efficient data manipulation process
-//        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
     }
 
     fun addNickname(view: View) {
