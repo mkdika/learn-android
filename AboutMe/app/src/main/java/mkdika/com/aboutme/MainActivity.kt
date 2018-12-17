@@ -12,12 +12,16 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    private val myName:MyName = MyName("Maikel C")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // setContentView(R.layout.activity_main)
 
         // use binding engine for efficient data manipulation process
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding.myName = myName
     }
 
     fun addNickname(view: View) {
@@ -27,7 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         // use Data binding way
         binding.apply {
-            nicknameText.text = nicknameEdit.text
+//            nicknameText.text = nicknameEdit.text
+            myName?.nickname = nicknameEdit.text.toString()
             nicknameEdit.visibility = View.GONE
             doneButton.visibility = View.GONE
             nicknameText.visibility = View.VISIBLE

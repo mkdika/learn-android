@@ -2,14 +2,19 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
-    
+
     <LinearLayout android:orientation="vertical"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent">
 
+        <data>
+            <import type="android.view.View"/>
+            <variable name="myName" type="mkdika.com.aboutme.MyName"/>
+        </data>
+
         <TextView
-                android:layout_height="wrap_content" android:id="@+id/paddi"
-                android:text="@string/name"
+                android:layout_height="wrap_content" android:id="@+id/name_text"
+                android:text="@={myName.name}"
                 android:layout_width="match_parent"
                 android:textAlignment="center"
                 style="@style/NameStyle"
@@ -33,9 +38,12 @@
                 android:onClick="addNickname"/>
         <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/nickname_text" android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/nickname_text"
+                android:textAlignment="center"
                 android:paddingTop="@dimen/padding"
-                android:layout_marginTop="@dimen/padding"/>
+                android:layout_marginTop="@dimen/padding"
+                android:text="@={myName.nickname}"/>
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
